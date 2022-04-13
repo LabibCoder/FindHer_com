@@ -19,13 +19,12 @@
     padding-bottom: 1rem;
     user-select: none;
     box-shadow:
-  1.5px 1.7px 2.2px rgba(0, 0, 0, 0.104),
-  3.5px 4.1px 5.3px rgba(0, 0, 0, 0.149),
-  6.6px 7.6px 10px rgba(0, 0, 0, 0.185),
-  11.8px 13.6px 17.9px rgba(0, 0, 0, 0.221),
-  22.1px 25.5px 33.4px rgba(0, 0, 0, 0.266),
-  53px 61px 80px rgba(0, 0, 0, 0.37)
-;
+    1.5px 1.7px 2.2px rgba(0, 0, 0, 0.104),
+    3.5px 4.1px 5.3px rgba(0, 0, 0, 0.149),
+    6.6px 7.6px 10px rgba(0, 0, 0, 0.185),
+    11.8px 13.6px 17.9px rgba(0, 0, 0, 0.221),
+    22.1px 25.5px 33.4px rgba(0, 0, 0, 0.266),
+    53px 61px 80px rgba(0, 0, 0, 0.37);
 }
 
 .title{
@@ -33,12 +32,13 @@
     color: black;
     font-size: 3rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 0.5rem;
 }
 
 ul{
     float: right;
     display: inline-flex;
-    padding-top: 1.5rem;
+    margin-top: 1.5rem;
     list-style: none;
     margin-bottom: 1rem;
     margin-left: 1rem;
@@ -77,14 +77,47 @@ li{
     border-color: #cad6e2;
 }
 
-.dnd{
-    position: relative; 
-    display: inline-block;
-    top: 5rem;
-    color: white;
-    width: 100%;
-    padding-bottom:  30%;
-    border-style: dashed;
+.search_sec{
+    display: flex;
+    float: left;
+    margin-top: 1rem;
+    border-style: solid;
     border-radius: 1rem;
-
+    min-width: 5rem;
+    height: 3rem;
+    margin-left: 0.5rem;
 }
+
+.search{
+    position: relative;
+    float: left;
+    background-color: inherit;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    width: 11rem;
+}
+
+.srch_btn{
+    float: right;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: whitesmoke;
+    border-style: solid;
+    background-color: #40a0e0;
+    border-top-right-radius: 0.9rem;
+    border-bottom-right-radius: 0.9rem;
+    border-color: #40a0e0;
+    cursor: pointer; 
+    border-width: 0.5rem;
+}
+
+.srch_btn:hover{
+    transition: all 0.2s ease-in-out;
+    background-color: #cad6e2;
+    color: black;
+    border-color: #cad6e2;
+}
+
